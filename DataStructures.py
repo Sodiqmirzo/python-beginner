@@ -134,3 +134,93 @@ point = (1, 2, 4)
 # x, y = y, x
 # print(f"x: {x} \ny: {y}")
 
+# from array import array
+#
+# numbers = array("i", [1, 2, 3])
+# numbers[0] = 1.0
+# print(numbers)
+# # https://www.educative.io/edpresso/what-are-type-codes-in-python
+
+# numbers = [1, 1, 2, 3, 4]
+# # uniques = set(numbers)
+# first = set(numbers)
+# # print(uniques)
+# second = {1, 5}
+# print(first | second)
+# print(first & second)
+# print(first - second)
+# print(first ^ second)
+#
+# if 1 in first:
+#     print("Yes")
+
+# point = {"x": 1, "y": 3}
+# point = dict(x=1, y=2)
+# point["x"] = 10
+# point["z"] = 20
+# # print(point)
+# if "a" in point:
+#     print(point["a"])
+# print(point.get("a", 0))
+# del point["x"]
+# print(point)
+# # for x in point:
+# #     print(x)
+# # for key in point:
+# #     print(key, point[key])
+# # for x in point.items():
+# #     print(x)
+# for key, value in point.items():
+#     print(key, value)
+
+# # values = []
+# # for x in range(5):
+# #     values.append(x * 2)
+# # print(values)
+# # [expression for item in items]
+# # values = [x * 2 for x in range(5)]
+# # values = {x * 2 for x in range(5)}
+# # values = {}
+# # for x in range(5):
+# #     values[x] = x * 2
+# values = {x: x * 2 for x in range(5)}
+# print(values)
+
+# from sys import getsizeof
+#
+# # values = [x * 2 for x in range(10)]
+# values = (x * 2 for x in range(1000))
+# print("gen:", getsizeof(values))
+# values = [x * 2 for x in range(10)]
+# print("list:", getsizeof(values))
+# # for x in values:
+# #     print(x)
+
+# # numbers = [1, 2, 3, 4, 5]
+# # # print(numbers)
+# # print(*numbers)
+# # values = list(range(5))
+# # values = [*range(5), *"Hello"]
+# # first = [1, 2]
+# # second = [3]
+# # values = [*first, 'a', *second, *"Hello"]
+# # print(values)
+# first = {"x": 1}
+# second = {"x": 10, "y": 2}
+# compined = {**first, **second, "z": 89}
+# print(compined)
+
+# from pprint import pprint
+#
+# sentence = "This is a common interview question"
+#
+# char_frequency = {}
+# for char in sentence:
+#     if char in char_frequency:
+#         char_frequency[char] += 1
+#     else:
+#         char_frequency[char] = 1
+# # pprint(char_frequency, width=1)
+#
+# char_frequency_sorted = sorted(char_frequency.items(), key=lambda kv: kv[1], reverse=True)
+# print(char_frequency_sorted[0])
