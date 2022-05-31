@@ -1,6 +1,6 @@
 class Point:
     def draw(self):
-        print("draw")
+        print("drawing...")
 
 
 point = Point()
